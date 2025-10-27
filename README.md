@@ -104,7 +104,7 @@ version: '3.8'services:
    
 3.  验证：打开浏览器，访问 http://localhost:8080。
     - 成功标志：能看到Keycloak页面，并使用 用户名: admin， 密码: admin 成功登录管理后台。
-    - 输出物：在飞书日报中提交登录成功后的截图。
+    - 输出物：提交登录成功后的截图给李诗嘉同学。
 
 ## 任务二：技术学习与分工
 - 前端 (李欣冉， 彭茂钢):
@@ -132,6 +132,17 @@ version: '3.8'services:
   - [Keycloak官方文档](https://www.keycloak.org/documentation)
   - [Keycloakify文档](https://docs.keycloakify.dev/)
   - [OIDC SPA 接入指南](https://www.oidc-spa.dev/)
+
+以下工具可帮助团队成员提升效率，建议安装：
+## 1. GitHub Desktop (图形化Git工具)
+- 适用人群：不熟悉Git命令的前端、UI、测试同学。
+- 作用：通过图形界面完成克隆、提交、分支管理等操作，降低学习成本。
+- 下载链接：https://desktop.github.com/
+
+## 2. Watt Toolkit (网络加速工具)
+- 适用人群：所有在安装Docker或访问GitHub时遇到网络连接问题的成员。
+- 作用：对GitHub、Docker等开发者常用网站进行网络加速。
+- 下载链接：https://steampp.net/
 
   ps.过程中有问题及时反馈。
 李诗嘉更新于2025年10月27日
