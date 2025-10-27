@@ -28,26 +28,24 @@ https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/git%E9%AA%8C%E8
       bash
       docker --version
    按需下载：
-
+https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/docker%E5%AE%89%E8%A3%85.png
 点击软件进入：
-
+https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/docker%E6%8C%87%E4%BB%A4%E5%A4%8D%E5%88%B6.png
 copy指令：wsl --update
 在键盘上按 Win + S 键，输入 cmd。
 在搜索结果“命令提示符”上，右键单击，选择 “以管理员身份运行”。
 在打开的黑色窗口中，右键单击，将复制的 wsl --update 命令粘贴进去，然后按回车键。
 
+
 WSL更新完成后，可以点击弹窗中的 Restart 按钮，或者手动重启。
-
-
-
-
+https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/restart.png
 打开命令行：
 按 Win + R 键，输入 cmd，然后按回车，打开命令提示符。
 验证Docker命令：
 在命令行中输入以下命令并回车：
 bash
 docker --version
-
+https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/docker%E5%AE%89%E8%A3%85%E9%AA%8C%E8%AF%81.png
 使用 cd 命令进入你之前克隆的项目目录 Keycloak_Guardians。
 bash
 cd [你的路径]\Keycloak_Guardians
@@ -60,10 +58,10 @@ git clone https://github.com/fionamoore/Keycloak_Guardians.git "D:\myFiles\Keycl
 接着输入指令：
 D:\myFiles\Keycloak> 
 Dir
-
+https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/%E7%9B%AE%E5%BD%95.png
 如果像图中一样没有docker-compose.yml文件，在D:\myFiles\Keycloak 文件夹中，右键新建一个文本文档。
 将文件重命名为 docker-compose.yml（注意扩展名是 .yml 不是 .txt）。
-
+https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/%E6%8F%90%E4%BA%A4%E6%88%AA%E5%9B%BE1.png
 用VS Code打开这个文件，复制粘贴以下内容：
 version: '3.8'services:
   keycloak:
@@ -75,13 +73,13 @@ version: '3.8'services:
       - "8080:8080"
     command: start-dev
 并保存文件。
-
+https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/keycloak%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.png
 
 本地 Keycloak 环境搭建指南已打通。
 请所有人按照步骤操作，目标是在2025年10月29日前访问 http://localhost:8080 并成功登录管理后台（账号admin/admin）并截图发给李诗嘉同学。
 示例如下：
-
-
+https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/%E6%8F%90%E4%BA%A4%E6%88%AA%E5%9B%BE2.png
+https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/%E6%8F%90%E4%BA%A4%E6%88%AA%E5%9B%BE2.png
 
 3.  前端同学额外安装Node.js
     - 下载链接：https://nodejs.org (选择 LTS 版本)
@@ -89,7 +87,8 @@ version: '3.8'services:
       bash
       node --version
       npm --version
-     
+     https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/%E6%8F%90%E4%BA%A4%E6%88%AA%E5%9B%BE3.png
+
 
 ## 本周核心任务：环境搭建与认知统一 (Week 1)
 目标：全体成员在本地成功运行Keycloak，并对OIDC流程建立基本认知。
