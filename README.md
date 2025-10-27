@@ -20,7 +20,7 @@
       git --version
 
 安装成功如下图所示：
-
+https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/git%E9%AA%8C%E8%AF%81.png
 
 2.  安装Docker
     - 下载链接：https://www.docker.com/products/docker-desktop/
