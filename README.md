@@ -20,7 +20,7 @@
       git --version
 
 安装成功如下图所示：
-https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/git%E9%AA%8C%E8%AF%81.png
+![git验证](https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/git%E9%AA%8C%E8%AF%81.png)
 
 2.  安装Docker
     - 下载链接：https://www.docker.com/products/docker-desktop/
@@ -28,24 +28,23 @@ https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/git%E9%AA%8C%E8
       bash
       docker --version
    按需下载：
-https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/docker%E5%AE%89%E8%A3%85.png
+![docker安装](https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/docker%E5%AE%89%E8%A3%85.png)
 点击软件进入：
-https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/docker%E6%8C%87%E4%BB%A4%E5%A4%8D%E5%88%B6.png
+![指令复制](https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/docker%E6%8C%87%E4%BB%A4%E5%A4%8D%E5%88%B6.png)
 copy指令：wsl --update
 在键盘上按 Win + S 键，输入 cmd。
 在搜索结果“命令提示符”上，右键单击，选择 “以管理员身份运行”。
 在打开的黑色窗口中，右键单击，将复制的 wsl --update 命令粘贴进去，然后按回车键。
-
-
+![wsl更新](https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/wsl%E6%9B%B4%E6%96%B0%E8%BF%87%E7%A8%8B.png)
 WSL更新完成后，可以点击弹窗中的 Restart 按钮，或者手动重启。
-https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/restart.png
+![restart后](https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/restart.png)
 打开命令行：
 按 Win + R 键，输入 cmd，然后按回车，打开命令提示符。
 验证Docker命令：
 在命令行中输入以下命令并回车：
 bash
 docker --version
-https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/docker%E5%AE%89%E8%A3%85%E9%AA%8C%E8%AF%81.png
+![docker安装验证](https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/docker%E5%AE%89%E8%A3%85%E9%AA%8C%E8%AF%81.png)
 使用 cd 命令进入你之前克隆的项目目录 Keycloak_Guardians。
 bash
 cd [你的路径]\Keycloak_Guardians
@@ -58,10 +57,10 @@ git clone https://github.com/fionamoore/Keycloak_Guardians.git "D:\myFiles\Keycl
 接着输入指令：
 D:\myFiles\Keycloak> 
 Dir
-https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/%E7%9B%AE%E5%BD%95.png
+![目录显示](https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/%E7%9B%AE%E5%BD%95.png)
 如果像图中一样没有docker-compose.yml文件，在D:\myFiles\Keycloak 文件夹中，右键新建一个文本文档。
 将文件重命名为 docker-compose.yml（注意扩展名是 .yml 不是 .txt）。
-https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/%E6%8F%90%E4%BA%A4%E6%88%AA%E5%9B%BE1.png
+![yml文件创建](https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/%E6%8F%90%E4%BA%A4%E6%88%AA%E5%9B%BE1.png)
 用VS Code打开这个文件，复制粘贴以下内容：
 version: '3.8'services:
   keycloak:
@@ -73,13 +72,13 @@ version: '3.8'services:
       - "8080:8080"
     command: start-dev
 并保存文件。
-https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/keycloak%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.png
+![keycloak环境搭建完成](https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/keycloak%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.png)
 
 本地 Keycloak 环境搭建指南已打通。
 请所有人按照步骤操作，目标是在2025年10月29日前访问 http://localhost:8080 并成功登录管理后台（账号admin/admin）并截图发给李诗嘉同学。
 示例如下：
-https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/%E6%8F%90%E4%BA%A4%E6%88%AA%E5%9B%BE2.png
-https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/%E6%8F%90%E4%BA%A4%E6%88%AA%E5%9B%BE2.png
+![提交截图1](https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/%E6%8F%90%E4%BA%A4%E6%88%AA%E5%9B%BE2.png)
+![提交截图2](https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/%E6%8F%90%E4%BA%A4%E6%88%AA%E5%9B%BE2.png)
 
 3.  前端同学额外安装Node.js
     - 下载链接：https://nodejs.org (选择 LTS 版本)
@@ -87,13 +86,13 @@ https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/%E6%8F%90%E4%BA
       bash
       node --version
       npm --version
-     https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/%E6%8F%90%E4%BA%A4%E6%88%AA%E5%9B%BE3.png
+     ![提交截图3](https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/%E6%8F%90%E4%BA%A4%E6%88%AA%E5%9B%BE3.png)
 
 
 ## 本周核心任务：环境搭建与认知统一 (Week 1)
 目标：全体成员在本地成功运行Keycloak，并对OIDC流程建立基本认知。
 
-### 任务一：启动Keycloak (全体成员)
+## 任务一：启动Keycloak (全体成员)
 1.  获取代码：在终端中执行以下命令，将本项目下载到本地。
     bash
     git clone https://github.com/fionamoore/Keycloak_Guardians.git
@@ -107,7 +106,7 @@ https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/%E6%8F%90%E4%BA
     - 成功标志：能看到Keycloak页面，并使用 用户名: admin， 密码: admin 成功登录管理后台。
     - 输出物：在飞书日报中提交登录成功后的截图。
 
-### 任务二：技术学习与分工
+## 任务二：技术学习与分工
 - 前端 (李欣冉， 彭茂钢):
   - 任务：研究 keycloakify 官方示例。
   - 目标：在本地运行一个 keycloakify 的React起步模板，理解项目结构。
@@ -134,13 +133,5 @@ https://github.com/fionamoore/Keycloak_Guardians/blob/main/media/%E6%8F%90%E4%BA
   - [Keycloakify文档](https://docs.keycloakify.dev/)
   - [OIDC SPA 接入指南](https://www.oidc-spa.dev/)
 
-## 常见问题 (Q&A)
-1.  Docker启动失败？
-    - 确保Docker Desktop已运行。
-    - 检查端口8080是否被占用。
-2.  Git克隆失败？
-    - 检查网络连接。
-    - 确认Git已正确安装。
-3.  访问 http://localhost:8080 无法连接？
-    - 确认 docker-compose up -d 命令执行后无报错。
-    - 在Docker Desktop中确认Keycloak容器正在运行。
+  ps.过程中有问题及时反馈。
+李诗嘉更新于2025年10月27日
